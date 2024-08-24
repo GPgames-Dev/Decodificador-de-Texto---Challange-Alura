@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'mario';
+    src: url(fonte/mario-fonte-estravagante.TTF);
+    size: 32px;
+    font: weight 400px;
+    line-height: 48px;
+}
+
+@font-face {
+    font-family: 'mario-preto' ;
+    src: url(fonte/mario-preto.ttf);    
+}
+
+@font-face {
+    font-family: 'fonte-escrita-1';
+    src: url(fonte/normal-1.ttf);
+}
+
+@font-face {
+    font-family: 'fonte-escrita-2';
+    src: url(fonte/normal-2.ttf);
+}
+
+body {
+    background-image: url(img/fundo.jpg);
+}
+
+.cabecalho {
+    margin: 0;
+    padding: 0;
+}
+
+.logo-alura {
+    width: 120px;
+    left: 40px;
+    top: 40px;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.cabecalho__topo {
+    display: flex;
+    justify-content: center;
+}
+
+.bem-vindo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-right: 12%;
+    color: #000080;
+    font-family:'mario';
+    margin-left: 20%;
+}
+
+.tocar-musica {
+    border: none;
+    outline: none;
+    font-size: 30px;
+    width: 200px;
+    margin-left: 2%;
+}
+
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    margin-bottom: 50px;
+    border: none;
+    outline-style: none;
+
+}
+
+.setor1 {
+    margin-left: 20%;
+}
+
+.campo-texto {
+    width: 830px;
+    height: 362px;
+    font-size: 50px;
+    font-family: 'mario-preto';
+    color: #000080;
+    border: none;
+    margin-top: 53px;
+    text-transform: lowercase;
+    background-color: transparent;
+    outline: none;
+}
+
+::placeholder {
+    border: none;
+    border-radius: none;
+    color: #00bfff;
+    .campo-texto:focus{
+       outline: none; 
+    }
+}
+
+.explicacao {
+    font-family: 'Mario';
+    font-size: 30px;
+    color: #000080;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+
+button {
+    font-family: 'mario';
+    font-size: 40px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    border: solid 20px #ffff00;
+    border-radius: 20px;
+    padding: 1.5%;
+}
+    
+button:hover {
+    background-color: #87ceeb;
+}
+
+.bt-limpar {
+    border-color: #00bfff;
+}
+
+.texto-aparecer {
+    margin-top: 50px;
+    margin-right: 10%;
+}
+
+.mensagem-Wrapper {
+    background-color: transparent;
+    margin-right: 10%;
+    border: solid 2px #ffff00 ;
+    border-radius: 24px;
+    width: 375px;
+    height: 385px;
+    box-sizing: border-box;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mensagem {
+    background-color: transparent;
+    border: none;
+    font-family: 'fonte-escrita-1';
+    font-size: 40px;
+    color: #0e0e0e;
+    max-width: 375px;
+    max-height: 385px;
+}
+
+.mensagem:focus {
+    outline: none;
+}
+
+.mario {
+        height: 385px;
+}
+
+.bt-copiar {
+    border: solid 20px #00ff7f;
+    padding: 3%;
+    margin-left: 110px;
+}

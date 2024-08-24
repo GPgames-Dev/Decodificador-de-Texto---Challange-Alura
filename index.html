@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+
+        <img class="logo-alura" src="./img/logo alura.png" alt="logo da alura">
+        <nav class="cabecalho__topo">
+            <div class="bem-vindo">
+                <h1>Seja muito bem-vindo</h1>
+            <p>encriptador de texto gamer</p>
+            </div>
+            <button class="tocar-musica" onclick="tocarMusica()">tocar ou pausar música</button>
+            <audio id="musica" loop="true" src="music/Super Mario World Game Over LoFi Hip Hop Remix.mp3" type="audio/mp3"></audio>
+        </nav>
+    </header>
+
+    <main>
+        <section class="setor1">
+            <textarea class="campo-texto" cols="41" rows="4" placeholder="Digite o seu texto"></textarea>
+
+            <div class="explicacao">
+                <h6>Apenas letras minúsculas e sem acento</h6>
+            </div>
+
+            <section class="botoes">
+                <button onclick="btEncriptar()">criptografar</button>
+                <button onclick="btDescriptografar()">descriptografar</button>
+                <button onclick="btLimpar()" class="bt-limpar">limpar</button>
+            </section>
+
+        </section>
+
+        <section class="texto-aparecer">
+            <div class="mensagem-Wrapper">
+                <textarea class="mensagem" cols="20" rows="10"></textarea>
+                <img class="mario" src="img/mario-pulando.png"/>
+                
+            </div>
+            
+            <button class="bt-copiar" onclick="btCopiar()">copiar</button>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
